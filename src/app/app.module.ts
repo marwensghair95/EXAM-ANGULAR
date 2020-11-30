@@ -3,14 +3,26 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { ListPostComponent } from './list-post/list-post.component';
+import { AddPostComponent } from './add-post/add-post.component';
+import { UpdatePostComponent } from './update-post/update-post.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { Error500Component } from './error500/error500.component';
+import { Error404Component } from './error404/error404.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ListPostComponent,
+    AddPostComponent,
+    UpdatePostComponent,
+    Error500Component,
+    Error404Component
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
