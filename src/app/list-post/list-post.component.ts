@@ -17,6 +17,7 @@ export class ListPostComponent implements OnInit {
   
   }
   deletPost(i){
-    this.ServicesServices.deletepost(i) 
+    this.ServicesServices.deletepost(i);
+    window.location.reload(); 
     }
 }

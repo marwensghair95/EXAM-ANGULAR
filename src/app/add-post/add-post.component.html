@@ -4,13 +4,13 @@
             <div class="form-group">
                 <input class="form-control" formControlName="title" name="titre" type="text" placeholder="Titre">
                 <div *ngIf="submited && postForm.controls.title.hasError('required')">
-                    <div>le titre est obligatoire</div>
+                    <div class="text-danger">le titre est obligatoire</div>
                 </div>
             </div>
             <div class="form-group">
                 <textarea class="form-control" formControlName="description" type="text" placeholder="Description"
                     rows="3"></textarea>
-                <div>
+                <div class="text-danger">
                     <div *ngIf="submited && postForm.controls.description.hasError('required')">la description est
                         obligatoire</div>
                     <div *ngIf="submited && postForm.controls.description.hasError('minLength')">saisiessez une
@@ -26,7 +26,7 @@
                     <option>Société</option>
                 </select>
                 <div *ngIf="submited && postForm.controls.cat.hasError('required')">
-                    <div>le titre est obligatoire</div>
+                    <div class="text-danger">le titre est obligatoire</div>
                 </div>
             </div>
             <p>{{currentDate | date:'yyyy-MM-dd'}}</p>
