@@ -9,6 +9,7 @@ import { UpdatePostComponent } from './update-post/update-post.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { Error500Component } from './error500/error500.component';
 import { Error404Component } from './error404/error404.component';
+import { NavBarComponent } from './nav-bar/nav-bar.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { Error404Component } from './error404/error404.component';
     AddPostComponent,
     UpdatePostComponent,
     Error500Component,
-    Error404Component
+    Error404Component,
+    NavBarComponent
   ],
   imports: [
     BrowserModule,
